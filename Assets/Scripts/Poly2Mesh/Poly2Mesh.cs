@@ -124,7 +124,7 @@ public static class Poly2Mesh {
 	/// <returns>List of 2D PolygonPoints.</returns>
 	/// <param name="points">3D points.</param>
 	/// <param name="rotation">Rotation needed to convert 3D points into the XY plane.</param>
-	/// <param name="name="codeToPosition">Map (which we'll update) of PolygonPoint vertex codes to original 3D position.</param> 
+	/// <param name="codeToPosition">Map (which we'll update) of PolygonPoint vertex codes to original 3D position.</param> 
 	static List<PolygonPoint> ConvertPoints(List<Vector3> points, Quaternion rotation, Dictionary<uint, Vector3> codeToPosition) {
 		int count = points.Count;
 		List<PolygonPoint> result = new List<PolygonPoint>(count);
